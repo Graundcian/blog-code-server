@@ -27,7 +27,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # RUN code-server --install-extension esbenp.prettier-vscode
 
 #Install wget
-RUN sudo apt update && sudo apt install wget
+RUN sudo apt-get update && sudo apt-get install wget
 # Download hugo
 RUN wget https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-64bit.deb 
 # Install hugo
