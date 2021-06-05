@@ -26,6 +26,10 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
 # RUN code-server --install-extension esbenp.prettier-vscode
 
+# Download hugo
+Run curl -o hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-ARM64.deb
+# Install hugo
+Run sudo dpkg -i hugo.deb
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 
