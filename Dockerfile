@@ -27,9 +27,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # RUN code-server --install-extension esbenp.prettier-vscode
 
 # Download hugo
-Run curl -O https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-ARM64.deb
+Run curl -O https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-ARM64.deb && sudo dpkg -i hugo_0.83.1_Linux-ARM64.deb
 # Install hugo
-Run sudo dpkg -i hugo_0.83.1_Linux-ARM64.deb
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 
